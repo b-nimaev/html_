@@ -1,0 +1,58 @@
+.container
+  ul(class="nav nav-tabs" id="myTab" role="tablist")
+    li(class="nav-item" role="presentation")
+      a(class="nav-link" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="false") Описание
+    li(class="nav-item" role="presentation")
+      a(class="nav-link" id="details-tab" data-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="false") Детали
+    li(class="nav-item" role="presentation")
+      a(class="nav-link active" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="true") Отзывы
+  .tab-content(id="myTabContent")
+    .tab-pane.fade(id="description" role="tabpanel" aria-labelledby="description-tab")
+      h4 Описание
+      ul
+        li Артиул: 15823
+        li Стильный плетеный кофейный стол ANTIBES
+        li Необычное «крученое» плетение дает интересный объем и фактуру. В комбинации с столешницей из тика вы получаете премиальный предмет садовой мебели на вашей веранде.
+        li Материал — искусственный ротанг
+        li Каркас — алюминий
+        li Цвет плетения — натуральный под дерево
+        li Столешница — тик
+        li Размеры: 120x46x34 см (ширина- глубина- высота)
+    .tab-pane.fade(id="details" role="tabpanel" aria-labelledby="details-tab")
+      h4 Детали
+      ul
+        li Производитель:
+          a(href="javascript:void(0)") JOYGARDEN
+    .tab-pane.fade.show.active(id="reviews" role="tabpanel" aria-labelledby="reviews-tab")
+      ul.comment-list
+        li.comment
+          .avatar
+            img(src="assets/img/avatar.jpg")
+          .review-author
+            h5 Александр Бальжинимаев
+            hr
+            p Спасибо за отличный кофейный столик! Теперь удобно сидеть и работать до утра, после тяжелого дня. И даже спать не хочется.
+        li.comment
+          .avatar
+            img(src="assets/img/avatar2.jpg")
+          .review-author
+            h5 Jhon Doe
+            hr
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              | dolore magna aliqua. Ut enim ad minim veniam,
+              | nisi ut aliquip ex ea commodo
+              | dolor in reprehenderit in voluptate velit esse
+              | pariatur. Excepteur sint occaecat cupidatat non
+              | qui officia deserunt mollit anim id est laborum.
+      form
+        .mb-3
+          label(for="name" class="form-label") Как Вас зовут?
+          input(type="name" class="form-control" id="name" placeholder="")
+        .mb-3
+          label(for="email" class="form-label") Ваш e-mail
+          input(type="email" class="form-control" id="email" placeholder="")
+        .mb-3
+          label(for="review-text" class="form-label") Комментарий
+          textarea(class="form-control" id="review-text" rows="3" placeholder="")
+        .mb-3
+          button(class="btn btn-primary" type="submit") Отправить

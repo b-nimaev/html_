@@ -1,0 +1,46 @@
+footer
+  .container
+    .row
+      a.mt-4.mt-lg-0.col-lg-3.col-xl-3.order-last.order-lg-1.logotype-wrapper(href='./')
+        img(src='assets/img/logo.png' alt='logogtype')
+        p
+          | Предоставленная на сайте информация несёт справочный характер. Информация на сайте не является публичной офертой, определяемой положениями Статьи 437 ГК РФ.
+      .col-7.col-lg-3.col-xl-auto.offset-xl-1.order-2
+        h4 Полезные ссылки
+        - var categories = ['Сотрудничество', 'Отзывы', 'Новости', 'Наши работы', 'Оплата и доставка', 'Гарантиия', 'Контакты'];
+        ul
+          each val in categories
+            li
+              a(href='javascript:void(0')= val
+      .col-5.col-lg-3.col-xl-auto.order-3
+        h4 Контакты
+        ul.nav-list.phones
+          li
+            a(href='tel:javascript:void(0)')
+              span
+                i.fal.fa-mobile-android
+              span +7 (925)-227-44-37
+          li
+            a(href='tel:javascript:void(0)')
+              span
+                i.fal.fa-mobile-android
+              span 8 (800)-775-84-37
+          li
+            a(href='mailto:javascript:void(0)')
+              span
+                i.fal.fa-envelope-open-text
+              span 2274437@gmail.com
+      .col-lg-3.col-xl-auto.order-4
+        h4 График работы
+        ul.nav-list
+          li
+            span.fal.fa-clock
+            span Ежедневно с 09.00 до 22.00 (без выходных)
+          li
+            span.fal.fa-cart-arrow-down
+            span Приём заказов on-line: круглосуточно
+script(src='assets/jq.js')
+script(src='assets/bootstrap.js')
+script(src='assets/slick.js')
+script(src='assets/lightbox.js')
+script(src='assets/index.js')

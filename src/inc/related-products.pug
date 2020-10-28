@@ -1,0 +1,20 @@
+.container.subcat.related-products
+  .row.subcategory-list
+    h2 Похожие товары
+    - var count = 5;
+    - var i = 2;
+
+    while i < count
+      - i++;
+      a.col-6.col-sm-4.col-lg-3.cart(href='product.html')
+        article
+          .post-thumb
+            span.sale 25%
+            img(src='assets/img/2/' + i + '.jpg' alt='product-cat')
+          .post-entry
+            h6 ANTIBES КОФЕЙНЫЙ СТОЛ
+            .price
+              s 28 900 <i class="fal fa-ruble-sign"></i>
+              span &nbsp; 21 742 <i class="fal fa-ruble-sign"></i>
+            button.buy-button.btn.btn-success В корзину
+            button.buy-button.btn.btn-primary Купить

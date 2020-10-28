@@ -1,0 +1,50 @@
+main.col-lg-9
+  .category-heading
+    h2 Мебель из искусственного ротанга
+    a(href='#more') Подробнее
+
+  .row.product-list
+    - var count = 30;
+    - var i = 0;
+
+    a.col-lg-6.cart(href='subcategory.html')
+      article
+        .post-thumb
+          img(src='assets/img/1/1.jpg' alt='product-cat')
+        .post-entry
+          h4 Подкатегория ID = 1
+    .col-lg-6.cart.columned
+      a.cart(href='subcategory.html')
+        article
+          .post-thumb
+            img(src='assets/img/1/1.jpg' alt='product-cat')
+          .post-entry
+            h4 Подкатегория ID = 1
+      a.cart(href='subcategory.html')
+        article
+          .post-thumb
+            img(src='assets/img/1/1.jpg' alt='product-cat')
+          .post-entry
+            h4 Подкатегория ID = 1
+    while i < count
+      - i++;
+      a.col-6.col-sm-4.col-lg-3.cart(href='subcategory.html')
+        article
+          .post-thumb
+            img(src='assets/img/1/' + i + '.jpg' alt='product-cat')
+          .post-entry
+            h4 Подкатегория ID = #{i}
+
+  #more.category-decription
+    h2 Описание
+    p
+      | Плетеная мебель из искусственного ротанга – это актуальный в любом интерьере дизайн,
+      | особый комфорт, а также высочайшие эксплуатационные качества.
+      | Садовая мебель из такого материала способна превратить любую
+      | веранду в релакс-зону в жаркие летние месяцы.
+      | Интернет магазин «ПаркМебели» предлагает к покупке
+      | широчайший выбор садовой плетеной мебели из искусственного
+      | ротанга для людей с любыми потребностями. Представленная в
+      | каталоге продукция производится по той же технологии,
+      | что и мебель из натурального ротанга. Все изделия
+      | плетутся вручную на алюминиевой или стальной основе.

@@ -1,0 +1,18 @@
+doctype html
+head
+	meta(charset='UTF-8')
+	meta(name='viewport' content='width=device-width, initial-scale=1.0')
+	title Document
+	link(rel='stylesheet' href='assets/style.css')
+include inc/header.pug
+include inc/breadcrumb.pug
+.content.container
+	.row
+		include inc/sidebar.pug
+		include inc/product.pug
+include inc/topheader.pug
+
+include inc/tabs.pug
+
+include inc/related-products.pug
+include inc/footer.pug

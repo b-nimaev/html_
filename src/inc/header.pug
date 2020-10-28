@@ -1,0 +1,46 @@
+header.headertop.container
+  .row
+    .col-lg-auto.d-flex.order-last-order-lg-1.mx-auto
+      form
+        input(placeholder='Поиск по товарам..')
+        button(type='submit')
+          i.fal.fa-search
+    .col-md-5.col-lg-3.order-first.order-lg-2.m-auto
+      img(src='assets/img/logo.png')
+    .col-lg-auto.order-md-2.d-flex.mx-auto.mt-3.mb-3
+      ul.nav-list.phones
+        li
+          a(href='tel:javascript:void(0)')
+            span
+              i.fal.fa-mobile-android
+            span +7 (925)-227-44-37
+        li
+          a(href='tel:javascript:void(0)')
+            span
+              i.fal.fa-mobile-android
+            span 8 (800)-775-84-37
+      button.cart
+        span В корзине пусто.
+        span.fal.fa-shopping-bag
+
+nav.navbar.navbar-expand-sm.navbar-light.bg-light
+  .container
+    button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+      span.navbar-toggler-icon
+      span Меню
+
+    .collapse.navbar-collapse#navbarSupportedContent
+      ul.navbar-nav.m-auto
+        li.nav-item
+          a.nav-link.awesome(href='./')
+            span.fal.fa-gem
+            span Каталог
+        li.nav-item
+          a.nav-link(href='deliver.html') Оплата и доставка
+        li.nav-item
+          a.nav-link(href='guarant.html') Гарантии
+        li.nav-item
+          a.nav-link(href='#') Контакты
+        li.nav-item
+          a.nav-link.disabled(href='#') Новости
+

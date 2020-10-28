@@ -1,0 +1,14 @@
+aside.col-lg-3.navbar-expand-lg.navbar-light
+	- var categories = ['Детские игровые комплексы', 'Зонты уличные', 'Качели', 'Мебель для летнего кафе', 'Мебель для террасы', 'Мебель из искусственного ротанга', 'Мебель из металла', 'Подвесные кресла и гамаки', 'Садовая мебель', 'Товары', 'Уличные обогреватели', 'Шезлонги'];
+	button.navbar-toggler(type="button" data-toggle="collapse" data-target="#cats" aria-controls="cats" aria-expanded="false" aria-label="Toggle navigation")
+		span.navbar-toggler-icon
+		span Категории
+	.collapse.navbar-collapse#cats
+		ul
+			each val in categories
+				li
+					a(href='category.html')= val
+			li
+				a(href='javascript:void(0)').text-danger
+					span.fal.fa-gem
+					| &nbsp; Распродажа
